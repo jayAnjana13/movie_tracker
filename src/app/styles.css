@@ -1,0 +1,142 @@
+.container {
+    min-width: 100%;
+}
+
+.container1 {
+    margin:25px;
+} 
+.item {
+    color: #fff;
+}
+
+.carousel {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 80% !important
+   
+}
+
+.image {
+    width:80% !important;
+    height:25rem;
+    object-fit: fill;
+}
+
+.web_view_search {
+    display: block;
+    width: 70%;
+}
+
+.mobile_view_search {
+    display: none;
+    background: #11001c;
+}
+
+.searchbar {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background: #35012C;
+}
+
+.combobox {
+    background: #35012C;
+    color: #fff;
+    display: block;
+}
+
+.suggestion_row {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.onhover:hover {
+    backdrop-filter : contrast(0.3);
+    cursor:pointer
+}
+
+
+.MuiInputBase-root {
+    width: 100% !important;
+}
+
+.suggestionbox {
+    position: absolute;
+    background: #35012C;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.view_all {
+    color:#fff !important;
+    font-size: large;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.view_all :hover {
+    color: blue !important;
+}
+
+.light_text {
+    color: rgb(156, 156, 156);
+    font-family: Okra, Helvetica, sans-serif;
+    font-size: smaller
+}
+
+.search_name {
+    font-weight: 700;
+    font-family: sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.web_logo {
+    width: 150px;
+    position: relative
+}
+   
+    @media only screen and (max-width: 600px) {
+        .container {
+            height:350px
+        }
+        .web_logo {
+            width: 150px;
+            position: relative
+        }
+        .card{
+           
+            width:120px;
+            height:160px;
+        }
+
+        .combobox {
+            background: #35012C;
+            color: #fff;
+            display: none;
+        }
+    
+        .card_image {
+            width:120px;
+            height:160px;
+            object-fit:fill;
+            border-radius: 15px;
+    }
+
+    .web_view_search {
+        display: none;
+    }
+    
+    .mobile_view_search {
+        display: flex;
+        justify-content: center;
+    }
+
+}
